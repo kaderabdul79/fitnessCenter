@@ -14,6 +14,11 @@
             "height": "172"
           }
         ],
+        "gym_comany_name": "active fitness pvt ltd",
+        "name": "Active Fitness",
+        "name_id": 410,
+        "phone": 7878976678,
+        "email": "activefitness@gmail.com",
         "instructors": "Sayn De"
       },
       {
@@ -31,7 +36,12 @@
             "height": "152"
           }
         ],
-        "instructors": "Zulfikher"
+        "instructors": "Zulfikher",
+        "gym_comany_name": "Everlast Gym pvt ltd",
+        "name_id": 412,
+        "name": "Everlast Gym",
+        "phone": 9871114219,
+        "email": "contact@everlastfitness.in"
       },
       {
         "members": [
@@ -48,6 +58,11 @@
             "height": "182"
           }
         ],
-        "instructors": "Rafid"
+        "instructors": "Rafid",
+        "gym_comany_name": "Prems Gym Pvt Ltd",
+        "name_id": 423,
+        "name": "Prems Gym",
+        "phone": 7838000017,
+        "email": "premsgym17@gmail.com"
       }
 ]
