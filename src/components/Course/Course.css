@@ -10,6 +10,13 @@
 .course-area img{
     width: 100%;
 }
+/* .course-img{
+    position: relative;
+} */
 .course-area p{
     padding: 8px 0;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
