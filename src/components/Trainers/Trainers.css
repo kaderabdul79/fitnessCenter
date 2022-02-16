@@ -1,0 +1,29 @@
+.trainers-area{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.trainer{
+    
+}
+.trainers-img img{
+    width: 100%;
+}
+
+.trainers-img img{
+    
+}
+.trainers-info{
+
+}
+
+
+
+
+
+

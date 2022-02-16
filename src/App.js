@@ -7,6 +7,7 @@ import ContactUs from './components/ContactUs/ContactUs';
 import About from './components/About/About';
 import Courses from './components/Courses/Courses';
 import CourseDetails from './components/CourseDetails/CourseDetails';
+import Trainers from './components/Trainers/Trainers';
 
 const App = () => {
   return (
@@ -15,11 +16,14 @@ const App = () => {
         <Header></Header>
         
       <Switch>
-      <Route exact path="/courses">
+        <Route exact path="/courses">
           <Courses></Courses>
         </Route>
         <Route path="/courses/:slug">
           <CourseDetails></CourseDetails>
+        </Route>
+        <Route exact path="/trainers">
+          <Trainers></Trainers>
         </Route>
         <Route path="/contact">
           <ContactUs></ContactUs>
