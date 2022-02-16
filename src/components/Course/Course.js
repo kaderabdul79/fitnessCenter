@@ -12,7 +12,7 @@ const Course = (props) => {
                 </div>
                 <h2>{title}</h2>
                 <p>{(description.length > 100) ? description.substring(0,100) : description}</p>
-                <button className='btnstyle'><Link to={`/courses/${slug.toLowerCase()}`}>Learn more</Link></button>
+                <button className='btnstyle'><Link to={`/courses/${slug}`}>Learn more</Link></button>
         </div>
     );
 };

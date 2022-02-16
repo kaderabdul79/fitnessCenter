@@ -6,7 +6,14 @@ import './CourseDetails.css'
 
 const CourseDetails = () => {
     const {slug} = useParams()
-
+    const [course,setCourse] = useState([])
+    // load specific course data from own api
+    useEffect(()=>{
+        fetch(`http://localhost:5000/courses/${slug}`)
+        .then(res => res.json())
+        .then(data => console.log(data))
+    },[])
+    //console.log(data)
     return (
         <>
             <div className="contact-area">
