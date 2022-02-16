@@ -18,5 +18,25 @@ export const Data = [
         text: 'Portfolio',
         path: '/portfolio',
         className: 'data-item'
+    },
+    {
+        text: 'Portfolio',
+        path: '/portfolio',
+        className: 'data-item'
+    },
+    {
+        text: 'Portfolio',
+        path: '/portfolio',
+        className: 'data-item'
+    },
+    {
+        text: 'Portfolio',
+        path: '/portfolio',
+        className: 'data-item'
+    },
+    {
+        text: 'Portfolio',
+        path: '/portfolio',
+        className: 'data-item'
     }
 ]

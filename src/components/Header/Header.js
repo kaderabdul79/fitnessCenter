@@ -1,8 +1,7 @@
 import { MenuOutlined } from '@material-ui/icons';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { Data } from './Data';
-import { Data } from './Data'
+import { Data } from './MobileNavMenuData'
 import './Header.css'
 
 const Header = () => {

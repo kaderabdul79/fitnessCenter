@@ -56,7 +56,7 @@ nav{
     width: 30%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    gap:5rem;
+    gap: 2rem;
     text-align: center;
 }
 .slider .slider-ul li{
