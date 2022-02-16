@@ -1,0 +1,81 @@
+.about-area{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    padding: 8px 16px;
+}
+.about-content{
+   align-self: center;
+}
+.about-content h2{
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: bold;
+}
+.about-content p{
+    margin-bottom: 20px;
+}
+.about-content button{
+        position: relative;
+        left: 0;
+        display: inline-block;
+        overflow: hidden;
+        background: #82b53f;
+        color: #ffffff !important;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        border: none;
+        box-shadow: 3px 4px 15px 0px rgba(168, 168, 168, 0.75);
+  
+}
+.about-img{
+
+}
+.about-img{
+    
+}
+
+
+
+/* gallery-grid */
+.gallery{    
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,2fr);
+}
+
+.horizontal{
+    
+}
+.vertical{
+
+}
+.big{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
