@@ -1,0 +1,15 @@
+.courses-area{
+    display: grid;
+    margin: 10px 50px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.course-area img{
+    width: 100%;
+}
+.course-area p{
+    padding: 8px 0;
+}
