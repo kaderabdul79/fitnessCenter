@@ -11,9 +11,11 @@ const CourseDetails = () => {
     useEffect(()=>{
         fetch(`http://localhost:5000/courses/${slug}`)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setCourse(data))
     },[])
-    //console.log(data)
+    // console.log(course)
+    
+    
     return (
         <>
             <div className="contact-area">
@@ -24,19 +26,18 @@ const CourseDetails = () => {
             </div>
             <div className='courseDetails'>
                 <div className="coursedetails-left">
-                    <img src="https://fitness.wpmix.net/wp-content/uploads/2017/06/single-class.jpg" alt="" />
+                    <img src={course.img} alt="course banner" />
                     <div className="description">
                     <b>CLASS DESCRIPTION</b>
-                    <p>Donec sollicitudin mattis sem, at mollis diam euismod in. Maecenas euismod iaculis lorem, quis ornare mauris. Sed et magna consectetur, dapibus mi id, imperdiet ante. Aliquam at nisi eros. Suspendisse lacinia auctor mattis. Fusce sodales mauris nec pharetra ultrices. Phasellus nisi leo, imperdiet sed leo aliquet, ullamcorper varius dui. Etiam non gravida purus, ut egestas libero. Integer posuere maximus turpis, vehicula pharetra diam mollis vel.
-                        Etiam placerat, nulla imperdiet blandit vehicula, arcu massa suscipit mi, a sollicitudin nisi lorem in nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer id finibus sem.</p>
+                    <p>{course.description}</p>
                     </div>
                     <div className="features">
                         <b>FEATURES</b>
-                        <li><i></i>azaz</li>
-                        <li><i></i>azaza</li>
-                        <li><i></i>zaza</li>
-                        <li><i></i>wdwed</li>
-                        <li><i></i>e3we3w</li>
+                        <li><i></i>{course.features[0]}</li>
+                        <li><i></i>{course.features[1]}</li>
+                        <li><i></i>{course.features[2]}</li>
+                        <li><i></i>{course.features[3]}</li>
+                        <li><i></i>{course.features[4]}</li>
                     </div>
                 </div>
                 <div className="coursedetails-right">
