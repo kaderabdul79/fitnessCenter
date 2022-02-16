@@ -18,22 +18,22 @@ const Header = () => {
                 </div>
                 <ul className="ul-items">
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link to="/">About Us</Link>
+                        <Link to="/about">About Us</Link>
                     </li>
                     <li>
-                        <Link to="/">Courses</Link>
+                        <Link to="/courses">Courses</Link>
                     </li>
                     <li>
                         <Link to="/">Trainers</Link>
                     </li>
                     <li>
-                        <Link to="/">Schedules</Link>
+                        <Link to="/trainers">Schedules</Link>
                     </li>
                     <li>
-                        <Link to="/">Contact Us</Link>
+                        <Link to="/contact">Contact Us</Link>
                     </li>
 
                     <div className="humburger-menu">

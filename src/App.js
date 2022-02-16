@@ -15,10 +15,10 @@ const App = () => {
         <Header></Header>
         
       <Switch>
-      <Route path="/courses">
+      <Route exact path="/courses">
           <Courses></Courses>
         </Route>
-        <Route exact path="/courses/:slug">
+        <Route path="/courses/:slug">
           <CourseDetails></CourseDetails>
         </Route>
         <Route path="/contact">
