@@ -27,7 +27,7 @@ nav{
     font-weight: 700;
 }
 .ul-items li a:hover{
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid rgb(247, 0, 0);
 }
 .humburger-menu{
     display: flex;

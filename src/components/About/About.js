@@ -16,7 +16,7 @@ const About = () => {
             <div className="about-content">
                 <h2>{aboutData.title}</h2>
                 <p>{aboutData.description}</p>
-                <button>{aboutData.btnText}</button>
+                <button className='btnstyle'>{aboutData.btnText}</button>
             </div>
         </div>
         <div className="gallery">
