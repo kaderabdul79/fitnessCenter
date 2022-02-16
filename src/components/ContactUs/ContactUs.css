@@ -1,0 +1,52 @@
+.contactbgTop{
+    position: relative;
+}
+.contactbgTop img{
+    width: 100%;
+}
+/* .contact-info{
+    font-size: 100px;
+} */
+.title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.contact-info{
+
+}
+.inputbox{
+   
+}
+.inputlavel{
+}
+.inputfield{
+}
+
+.btnstyle{
+        display: inline-block;
+        padding: 0 50px;
+        border: none;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 54px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: none;
+        vertical-align: middle;
+        color: #fff;
+        cursor: pointer;
+        background: #d7272a;
+        height: 54px;
+        border-radius: 0;
+        position: relative;
+        box-sizing: border-box;
+        transition: all .3s ease;
+}
