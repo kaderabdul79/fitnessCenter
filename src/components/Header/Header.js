@@ -35,6 +35,9 @@ const Header = () => {
                     <li>
                         <Link to="/contact">Contact Us</Link>
                     </li>
+                    <li>
+                        <Link to="/login">Login</Link>
+                    </li>
 
                     <div className="humburger-menu">
                         <MenuOutlined onClick={showMenu} className="menu"></MenuOutlined>
