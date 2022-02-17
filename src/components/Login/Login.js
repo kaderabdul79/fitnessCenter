@@ -12,6 +12,7 @@ const Login = () => {
                 <div className='loginToRegister'>
                     <Link to="/register">Are you new User?</Link>
                 </div>
+                <button>Signin Using Google</button>
             </form>
         </div>
     );
