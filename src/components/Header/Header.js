@@ -38,7 +38,9 @@ const Header = () => {
                     <li>
                         <Link to="/login">Login</Link>
                     </li>
-
+                    <li>
+                        <Link to="/addcourse">Add Course</Link>
+                    </li>
                     <div className="humburger-menu">
                         <MenuOutlined onClick={showMenu} className="menu"></MenuOutlined>
                     </div>
