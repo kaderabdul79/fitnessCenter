@@ -1,18 +1,24 @@
 import React from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
+import useFirebase from '../hooks/useFirebase';
 
 const Login = () => {
+    const {signInUsingGoogle} = useFirebase()
+    // console.log(signInUsingGoogle)
+    const handleLoginData = (e) => {
+        e.preventDefault()
+    }
     return (
         <div>
-            <form>
+            <form onSubmit={handleLoginData}>
                 Email<input type="email" name="email" id="" />
                 Password<input type="password" name="password" id="" />
                 <button>Login</button>
                 <div className='loginToRegister'>
                     <Link to="/register">Are you new User?</Link>
                 </div>
-                <button>Signin Using Google</button>
+                <button onClick={signInUsingGoogle}>Signin Using Google</button>
             </form>
         </div>
     );
