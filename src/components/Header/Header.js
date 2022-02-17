@@ -41,6 +41,9 @@ const Header = () => {
                     <li>
                         <Link to="/addcourse">Add Course</Link>
                     </li>
+                    <li>
+                        <Link to="/addtrainer">Add Trainer</Link>
+                    </li>
                     <div className="humburger-menu">
                         <MenuOutlined onClick={showMenu} className="menu"></MenuOutlined>
                     </div>

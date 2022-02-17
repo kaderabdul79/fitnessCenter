@@ -14,6 +14,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Register from './components/Register/Register';
 import AddCourse from './components/Admin/AddCourse';
+import AddTrainer from './components/Admin/AddTrainer';
 
 const App = () => {
   return (
@@ -55,6 +56,9 @@ const App = () => {
         </Route>
         <Route path="/addcourse">
           <AddCourse></AddCourse>
+        </Route>
+        <Route path="/addtrainer">
+          <AddTrainer></AddTrainer>
         </Route>
       </Switch>
       
