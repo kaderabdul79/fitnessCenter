@@ -11,6 +11,7 @@ import Trainers from './components/Trainers/Trainers';
 import TrainerDetails from './components/TrainerDetails/TrainerDetails';
 import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
 
 const App = () => {
   return (
@@ -20,6 +21,12 @@ const App = () => {
 
         
       <Switch>
+        <Route exact path="/">
+          <Home></Home>
+        </Route>
+        <Route exact path="/home">
+          <Home></Home>
+        </Route>
         <Route exact path="/courses">
           <Courses></Courses>
         </Route>
