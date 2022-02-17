@@ -19,8 +19,18 @@
     text-transform: uppercase;
 }
 .contact-info{
-
+    width: 30%;
+    margin: 0 auto;
+    background-color: goldenrod
 }
+.inputbox{
+    margin: 0 auto; width: 30%;
+}
+.inputfield{
+    padding: 4px -8px;
+    margin-bottom: 10px;
+}
+
 .inputbox{
    
 }
