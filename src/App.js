@@ -12,6 +12,7 @@ import TrainerDetails from './components/TrainerDetails/TrainerDetails';
 import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
+import Register from './components/Register/Register';
 
 const App = () => {
   return (
@@ -47,6 +48,9 @@ const App = () => {
         </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/register">
+          <Register></Register>
         </Route>
       </Switch>
       
