@@ -1,0 +1,78 @@
+.TrainerDetails{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.Trainerdetails-left{
+    flex-basis: 70%;
+    margin-right: 30px;
+}
+
+.Trainerdetails-left img{
+    width: 100%;
+}
+.TrainerDetails-right{
+    flex-basis: 30%;
+    
+}
+.description{
+    padding: 25px 0;
+}
+.description b,
+.features b{
+    font-size: 25px;
+}
+.description p{
+    padding: 12px 0;
+}
+.trainer-details,
+.trainer-trainer{
+    background-color: rgb(2, 2, 2);
+    padding: 12px;
+    color: white;
+    margin-bottom: 40px;
+}
+.trainer-details b{
+    border-bottom: 1px solid rgb(240, 12, 12);
+}
+.trainer-details h2{
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+.trainer-details li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+.trainer-details li span{
+    color: rgb(138, 134, 128);
+}
+/* .trainer-details li:last-child {
+    border: 30px;
+  } */
+.trainer-trainer h4{
+    padding: 10px 0;
+}
+.trainer-trainer h3{
+    padding: 10px 0;
+}
+/* .{
+    
+}
+
+
+.{
+    
+}
+
+
+
+
+
+.{
+
+} */

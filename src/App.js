@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Courses from './components/Courses/Courses';
 import CourseDetails from './components/CourseDetails/CourseDetails';
 import Trainers from './components/Trainers/Trainers';
+import TrainerDetails from './components/TrainerDetails/TrainerDetails';
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
         </Route>
         <Route exact path="/trainers">
           <Trainers></Trainers>
+        </Route>
+        <Route path="/trainers/:id">
+          <TrainerDetails></TrainerDetails>
         </Route>
         <Route path="/contact">
           <ContactUs></ContactUs>
