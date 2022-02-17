@@ -8,7 +8,7 @@
 .coursedetails-left{
     flex-basis: 70%;
     margin-right: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .coursedetails-left img{
@@ -21,10 +21,12 @@
 .description{
     padding: 25px 0;
 }
-.description b{
+.description b,
+.features b{
     font-size: 25px;
-    font-weight: bold;
-    padding-bottom: 10px;
+}
+.description p{
+    padding: 12px 0;
 }
 .course-details,
 .course-trainer{
@@ -36,6 +38,10 @@
 .course-details b{
     border-bottom: 1px solid rgb(240, 12, 12);
 }
+.course-details h2{
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
 .course-details li{
     margin: 0;
     padding: 0;
@@ -43,6 +49,12 @@
     padding: 8px 12px;
     border-bottom: 1px solid rgb(163, 163, 163);
 }
+.course-details li span{
+    color: rgb(138, 134, 128);
+}
+/* .course-details li:last-child {
+    border: 30px;
+  } */
 .course-trainer h4{
     padding: 10px 0;
 }

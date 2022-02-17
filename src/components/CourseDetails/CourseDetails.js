@@ -33,27 +33,27 @@ const CourseDetails = () => {
                     </div>
                     <div className="features">
                         <b>FEATURES</b>
-                        <li><i></i>{course.features[0]}</li>
+                        {/* <li><i></i>{course.features[0]}</li>
                         <li><i></i>{course.features[1]}</li>
                         <li><i></i>{course.features[2]}</li>
                         <li><i></i>{course.features[3]}</li>
-                        <li><i></i>{course.features[4]}</li>
+                        <li><i></i>{course.features[4]}</li> */}
                     </div>
                 </div>
                 <div className="coursedetails-right">
                     <div className="course-details">
                         <h2>COURSE DETAILS</h2>
-                        <li>Trainer: WE</li>
-                        <li>qs</li>
-                        <li>3</li>
-                        <li>A</li>
-                        <li>ss</li>
+                        <li><span>Trainer:</span> {course.course_details?.Trainer}</li>
+                        <li><span>Time:</span> {course.course_details?.Time} Month</li>
+                        <li><span>Price:</span> {course.course_details?.Price} / Per Month</li>
+                        <li><span>Difficulty level:</span> {course.course_details?.Difficulty_level} </li>
+                        <li><span>Lessons:</span> {course.course_details?.Lessons} </li>
                         <button className='btnstyle'>book now</button>
                     </div>
                     <div className="course-trainer">
-                        <h4>COURSE TRAINER</h4>
+                        <h3>COURSE TRAINER</h3>
                         <img src="https://fitness.wpmix.net/wp-content/uploads/2017/06/widget-desc-1.jpg" alt="" />
-                        <h3>CHARLES POWERS</h3>
+                        <h4> {course.course_details?.Trainer}</h4>
                         <button className='btnstyle'>view profile</button>
                     </div>
 
