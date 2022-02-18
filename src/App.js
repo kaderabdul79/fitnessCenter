@@ -15,13 +15,14 @@ import Home from './components/Home/Home';
 import Register from './components/Register/Register';
 import AddCourse from './components/Admin/AddCourse';
 import AddTrainer from './components/Admin/AddTrainer';
+import AuthProvider from './components/context/AuthProvider';
 
 const App = () => {
   return (
     <div>
+    <AuthProvider>
       <BrowserRouter>
         <Header></Header>
-
         
       <Switch>
         <Route exact path="/">
@@ -64,6 +65,7 @@ const App = () => {
       
       <Footer></Footer>
       </BrowserRouter>
+    </AuthProvider>  
     </div>
   );
 };
