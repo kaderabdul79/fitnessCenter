@@ -6,7 +6,7 @@ import useAuth from '../hooks/useAuth';
 import { useState } from 'react';
 
 const Login = () => {
-    const {signInUsingGoogle,user,logOut} = useAuth()
+    const {signInUsingGoogle,user,logOut,loginUser, isLoading, error} = useAuth()
     // console.log(signInUsingGoogle)
     const [loginData,setLoginData] = useState({})
 
@@ -21,21 +21,23 @@ const Login = () => {
     }
 
     const handleLoginData = (e) => {
+        loginUser(loginData.email,loginData.password)
         e.preventDefault()
     }
     return (
         <div>
             <h2>{user?.name}</h2>
-            <button onClick={logOut}>logout</button>
+            {user?.name && <button onClick={logOut}>logout</button>}
             <form onSubmit={handleLoginData}>
                 Email<input onChange={handleonChangeData} type="email" name="email" id="" />
                 Password<input onChange={handleonChangeData} type="password" name="password" id="" />
-                <button>Login</button>
+                {!user.email && <button>Login</button>}
                 <div className='loginToRegister'>
                     <Link to="/register">Are you new User?</Link>
                 </div>
-                
             </form>
+            {user?.name && <h2>Successfully Login user</h2>}
+            {error && <h2>{error}</h2>}
             <button onClick={signInUsingGoogle}>Signin Using Google</button>
         </div>
     );

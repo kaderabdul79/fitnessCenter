@@ -16,6 +16,7 @@ import Register from './components/Register/Register';
 import AddCourse from './components/Admin/AddCourse';
 import AddTrainer from './components/Admin/AddTrainer';
 import AuthProvider from './components/context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 const App = () => {
   return (
@@ -31,12 +32,12 @@ const App = () => {
         <Route exact path="/home">
           <Home></Home>
         </Route>
-        <Route exact path="/courses">
+        <PrivateRoute exact path="/courses">
           <Courses></Courses>
-        </Route>
-        <Route path="/courses/:slug">
+        </PrivateRoute>
+        <PrivateRoute path="/courses/:slug">
           <CourseDetails></CourseDetails>
-        </Route>
+        </PrivateRoute>
         <Route exact path="/trainers">
           <Trainers></Trainers>
         </Route>

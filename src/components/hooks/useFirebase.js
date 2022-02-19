@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import firebaseAuthentication from '../Firebase/firebase.init';
 firebaseAuthentication();
 
@@ -42,6 +42,21 @@ const useFirebase = () => {
         })
         .finally(() => setIsLoading(false));
     }
+
+    const loginUser = (email, password) => {
+        setIsLoading(true);
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // const destination = location?.state?.from || '/';
+                // history.replace(destination);
+                setError('');
+            })
+            .catch((error) => {
+                setError(error.message);
+            })
+            .finally(() => setIsLoading(false));
+    }
+
     useEffect(() => {
        const unsubscribe = onAuthStateChanged(auth, user => {
             if (user) {
@@ -65,7 +80,7 @@ const useFirebase = () => {
     }
 
     return {
-        signInUsingGoogle,user,error,logOut,userRegistration,isLoading
+        signInUsingGoogle,user,error,logOut,userRegistration,isLoading,loginUser
     };
 };
 

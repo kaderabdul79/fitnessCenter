@@ -41,8 +41,8 @@ const Register = () => {
                 </div> 
             {isLoading && <div style={{backgroundColor: 'red'}}>
                 <iframe src="https://giphy.com/embed/W22b2eea2XxB6DiTWg" style={{color: 'white'}} width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/loading-sthenotes-W22b2eea2XxB6DiTWg">via GIPHY</a></p>
-                </div>}  
-                
+                        </div>  
+            }    
             {user?.email && <h2>User Created successfully!</h2>}
             {error && <h2>{error}</h2>}  
         </div>
